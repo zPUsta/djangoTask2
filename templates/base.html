@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block page_title%}
+        My Site
+        {% endblock page_title%}
+    </title>
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav_logo">
+            <img src="" alt="">
+        </div>
+
+     
+    </div>
+    {% block body%}
+    <h1>hello</h1>
+    {% endblock body%}
+</body>
+</html>

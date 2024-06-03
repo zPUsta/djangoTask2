@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block page_title%}
+    Home Page
+{% endblock page_title%}
+
+{% block body%}
+
+    <h1>Products</h1>
+
+   <div class="products">
+    <ul>
+        {% for product in products %}
+            <li>
+                <h2>{{ product.name }}</h2>
+                <p>Qiymət: {{ product.price }}</p>
+                <p>Stok: {{ product.stock }}</p>
+                <p>Təsvir: {{ product.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+   </div>
+ {% endblock body%}
